@@ -1,0 +1,20 @@
+#banner {
+  background-color: orange;
+}
+
+div.left-col {
+  clear: both;
+  width: 50%;
+  float: left;
+}
+
+div.right-col {
+  width: 50%;
+  float: right;
+}
+
+#technical textarea {
+  margin-left: 75px;
+}
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="submissionCSS.css">
+    <title>WEB-115 Final Project</title>
+  </head>
+
+  <body>
+    <!-- BANNER -->
+    <div id="banner">
+      <p>Mone' Bell-Arrington</p>
+      <p>WEB-115-0001</p>
+      <p>Build Your Resume</p>
+    </div>
+
+    <form id="resumeForm">
+
+      <!-- PERSONAL INFORMATION -->
+      <h3 class="header">Personal Information</h3>
+      <hr>
+      <div id="personal">
+
+        <!-- Name ::: City ::: State -->
+        <div class="left-col">
+          <label for="fname">First Name:</label><br>
+          <input type="text" id="fname"><br>
+
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname"><br>
+
+          <label for="city">City:</label><br>
+          <input type="text" id="city"><br>
+
+          <label for="state">State:</label><br>
+          <input type="text" id="state"><br>
+        </div>
+
+        <!-- Zip Code ::: Phone ::: Email ::: Social Media -->
+        <div class="right-col">
+          <label for="zipCode">Zip Code:</label><br>
+          <input type="text" id="zipCode"><br>
+
+          <label for="phone">Phone:</label><br>
+          <input type="text" id="phone"><br>
+
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" required><br>
+
+          <label for="socialMedia">Social Media Links:</label><br>
+          <input type="text" id="socialMedia"><br>
+        </div>
+
+      </div>
+
+
+      <div id="allSkills">
+
+        <!-- Skill Set -->
+        <div id="expertise">
+          <h3 class="header">Skill Set</h3>
+          <hr>
+          <label for="skill_1">Skills</label>
+          <input type="text" id="skill_1"><br>
+
+          <label for="skill_2">Skills</label>
+          <input type="text" id="skill_2"><br>
+
+          <label for="skill_3">Skills</label>
+          <input type="text" id="skill_3"><br>
+
+
+          <p id="newSkill"></p>
+          <input type="button" value="Add Skill" id="addSkill">
+        </div>
+
+        <!-- Technical Skill -->
+        <div id="technical">
+          <h3 class="header">Technical Skills</h3>
+          <hr>
+          <label for="tech1">Skill Name</label>
+          <input type="text" id="tech1"><br><br>
+          <textarea id="tech1_details" rows="5" cols="50"></textarea><br><br>
+
+          <label for="tech2">Skill Name</label>
+          <input type="text" id="tech2"><br><br>
+          <textarea id="tech2_details" rows="5" cols="50"></textarea><br><br>
+
+        </div>
+
+      </div>
+
+
+      <!-- EDUCATION -->
+      <h3 class="header">Education</h3>
+      <hr>
+      <div id="education">
+        <label for="edu">Details</label><br>
+        <textarea id="edu" rows="5" cols="50"></textarea>
+        <br>
+
+      </div>
+
+
+      <!-- EXPERIENCE -->
+      <h3 class="header">Experience</h3>
+      <hr>
+      <div id="experience_1">
+        <label for="jobTitle">Job Title</label><br>
+        <input type="text" id="jobTitle"><br>
+
+        <label for="jobName">Occupation:</label><br>
+        <input type="text" id="jobName"><br><br>
+
+        <label for="jobStart">Year Started:</label><br>
+        <input type="date" id="jobStart"><br>
+        <label for="jobEnd">Year Ended:</label><br>
+        <input type="date" id="jobEnd"><br><br>
+
+
+        <br><label for="jobDesc">Job Description:</label><br>
+        <textarea id="jobDesc" maxlength="230" rows="5" cols="50"></textarea><br>
+        <input type="checkbox" id="jobCurrent"> Currently at this Job?
+
+        <br><br><br>
+      </div>
+      <p id="expArea"></p>
+      <br><br><input type="button" id="addExperience" value="Add Experience">
+
+      <!-- SUBMIT -->
+      <br><br>
+      <input type="submit" id="submitForm" value="Create Resume">
+    </form>
+
+
+    <script src="projectJS.js"></script>
+  </body>
+
+</html>
